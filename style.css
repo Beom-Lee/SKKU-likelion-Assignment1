@@ -4,7 +4,13 @@
     
     .buttons{
         text-align: center;
-        
+        text-decoration: none;
+
+    }
+
+    .changebg{
+        background-color: chartreuse;
+        border-radius: 5px;
     }
     #title{
         text-align: center;
