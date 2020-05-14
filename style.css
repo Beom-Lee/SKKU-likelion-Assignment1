@@ -1,0 +1,128 @@
+    title, body{
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    
+    .buttons{
+        text-align: center;
+        
+    }
+    #title{
+        text-align: center;
+        font-size: large;
+    }
+    .h1{
+        color: rgba(84, 240, 23, 0.986);
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    .content{
+        padding:0 10%;
+    }
+    img{
+        position: relative;
+        width: 143px;
+        left: -50px;
+        top: -16px;
+        height: 100px;
+        grid-column: 1;
+        border-radius: 30px;
+        border: 8px groove rgb(235, 202, 19);
+        opacity: 0.9;
+    }
+    .card{
+        position: relative;
+        display: grid;
+        grid-template-columns: 20px auto 96px;
+        background-color: rgba(135, 241, 93, 0.986);
+        border-radius: 15px 15px 500px 150px;
+        opacity: 0.8;
+        width: 40%;
+        top: 60px;
+        margin-bottom: 5%;
+        box-shadow: 5px 5px rgb(122, 245, 153), 10px 10px rgb(60, 240, 99), 15px 15px rgb(11, 236, 11);
+        transition: 0.5s;
+    }
+
+    .card:hover{
+        background-color: orange;
+        color: azure;
+        box-shadow: none;
+    }
+    .date{
+        position: relative;
+        grid-column: 2;
+        font-weight: 900;
+        font-size: large;
+        left: 100px;
+    }
+    .what{
+        position: relative;
+        grid-column: 2;
+        left: 100px;
+    }
+    .where{
+        position: relative;
+        grid-column: 2;
+        left: 100px;
+    }
+    .text{
+        position: relative;
+        grid-column: 2;
+        left: 100px;
+    }
+    .hello{
+        position: relative;
+        grid-column: 2;
+        left: 100px;
+
+    }
+    .dot{
+        position: absolute;
+        top: 78px;
+        right: -137px;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(84, 240, 23, 0.986);
+        border-radius: 30%;
+    }
+    .line{
+        position: absolute;
+        top: 21%;
+        left: 50%;
+        margin-left: 5px;
+        width: 3px;
+        height: 175%;
+        background-color: rgba(192, 250, 173, 0.986);
+    }
+    .card:nth-child(even){
+        margin-left:60%
+    }
+    .card:nth-child(even)  .dot{
+        position: absolute;
+        left: -123px;
+    }
+
+    #tothetop{
+        position: fixed;
+        right: 0px;
+        bottom: 10px;
+    }
+    @media(max-width:1000px){
+        .dot, .line{
+            display: none;
+        }
+        .card{
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 13%;
+            transition: 0.3s;
+        }
+        
+        .card:nth-child(even){
+            margin-left: 10%;
+            
+        }
+    }
+
+    
