@@ -7,11 +7,11 @@
   <style>
 
     a {
-      color:red;
+      color:rgb(240, 202, 19);
       text-decoration: none;
     }
     h1{
-      background-color: aquamarine;
+      background-color: rgba(84, 240, 23, 0.986);
       font-size: 55px;
       text-align: center;
       border-bottom: 3px solid gray;
@@ -19,7 +19,7 @@
       padding: 30px;
     }
     h2{
-      background-color: chartreuse;
+      
       width: 350px;
     }
     #grid {
@@ -45,20 +45,38 @@
 
 <body>
   <h1><a href="main.html">100Days Proejet</a></h1>
-  <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
+  <input type="button" style="background-color:rgba(192, 250, 173, 0.986);" value="night" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+    
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+}
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+        alist[i].style.color = 'blue';
+        i = i + 1;
+}
+  }
   ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-  "> 
-<div id="grid">
-  <ul>
-    <li><h2>100Days Proejet</h2></li>
-    <li><h2>메인 기능</h2></li>
+  <div id="grid">
+  <ol>
+    <li><h2><a href = "main.html">100Days Proejet</a></h2></li>
+    <li><h2><a href = "main.html">메인 기능</a></h2></li>
     <li><h2><a href="timeline.html">2020 미래일기</a></h2></li>
-  </ul>
+  </ol>
   <div id="article">
   <h2>100Days Proejet</h2>
     <ol>
