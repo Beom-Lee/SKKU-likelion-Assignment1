@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업다운게임</title>
+    <style>
+            body{text-align: center; margin-top: 200px;}
+            button{background-color: rgb(91, 233, 110); padding: 3px 10px;}
+            .title{text-align: center; font-size: large;}
+            #life{font-size: medium; color: slategray; font-weight: bold;}
+            #lifeCnt{font-size: large; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Up down game</h1>
+        <p id="life">LIFE : <span id="lifecnt">5</span></p>
+    </div>
+    <form action="">
+        <input type="text" id="input" maxlength="4">
+        <button id="formBtn">try!</button>
+    </form>
+    <div id="result"></div>
+    <script src="updown.js"></script>
+</body>
+</html>
